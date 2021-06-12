@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MySCADA_Xamarin.MainPage">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <Image Source="Background2_mini.png"  AbsoluteLayout.LayoutBounds="0.3,0.3,0.69,0.6" AbsoluteLayout.LayoutFlags="All"/>
+            <ProgressBar Progress="0.9"  ScaleY="4.3" ScaleX="0.85" Rotation="-90" AbsoluteLayout.LayoutBounds="0.51,0.405, 0.5, 0.3" AbsoluteLayout.LayoutFlags="All"/>
+            <Image x:Name="img_Motor1" Source="Motor_off_1.png"  AbsoluteLayout.LayoutBounds="0.12,0.288,0.17,0.17" AbsoluteLayout.LayoutFlags="All">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="img_Motor1_Tapped"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Image x:Name="img_Motor2" Source="Motor_off_1.png" AbsoluteLayout.LayoutBounds="0.12,0.434,0.17,0.17" AbsoluteLayout.LayoutFlags="All">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="img_Motor2_Tapped"/>
+            </Image.GestureRecognizers>
+            </Image>
+            <Image x:Name="img_Pipe1" Source="Pipe_off.png" AbsoluteLayout.LayoutBounds="0.31,0.3,0.11,0.11" AbsoluteLayout.LayoutFlags="All"/>
+            <Image x:Name="img_Pipe2" Source="Pipe_off.png" AbsoluteLayout.LayoutBounds="0.31,0.44,0.11,0.11" AbsoluteLayout.LayoutFlags="All"/>
+            <Image x:Name="img_Valve" Source="ValveSolinoid_off.png" AbsoluteLayout.LayoutBounds="0.93,0.534,0.17,0.17" AbsoluteLayout.LayoutFlags="All">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="img_Valve_Tapped"/>
+                </Image.GestureRecognizers>
+            </Image>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
