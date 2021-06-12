@@ -5,6 +5,7 @@ public class MonoPackageManager_Resources {
 		"MySCADA_Xamarin.Android.dll",
 		"FormsViewGroup.dll",
 		"MySCADA_Xamarin.dll",
+		"S7.Net.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",
 		"Xamarin.AndroidX.Annotation.Experimental.dll",

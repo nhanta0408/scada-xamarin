@@ -56,3 +56,4 @@ D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MyS
 D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.iOS\obj\iPhone\Debug\MySCADA_Xamarin.iOS.csproj.CopyComplete
 D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.iOS\obj\iPhone\Debug\MySCADA_Xamarin.iOS.exe
 D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.iOS\obj\iPhone\Debug\MySCADA_Xamarin.iOS.pdb
+D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.iOS\bin\iPhone\Debug\S7.Net.dll

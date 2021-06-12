@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "X32Uk2B2hm7jPA9OhQ412cvbhCZe3nDn6ydtGGytWx66xSJqseNArpiZNfjlDpemF+Hs/IxrViOdpuiHklo/FQ==",
+  "dgSpecHash": "hUW33IWQc4K6qe4k/zhnVsyWEXndiVrwsg6tTpe+l/VS4k93A0eThvwL0Qm/kbA3zHCW2Jm1C627cI4m+z6RpA==",
   "success": true,
   "projectFilePath": "D:\\Study Document\\PGS202\\SCADA\\CSharpProject\\MySCADA_Xamarin\\MySCADA_Xamarin\\MySCADA_Xamarin\\MySCADA_Xamarin.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\nhant\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\nhant\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\nhant\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",

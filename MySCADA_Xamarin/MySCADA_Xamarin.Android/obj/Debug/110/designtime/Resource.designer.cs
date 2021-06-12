@@ -11650,7 +11650,7 @@ namespace MySCADA_Xamarin.Droid
 			public const int avd_show_password = 2131165281;
 			
 			// aapt resource value: 0x7F070062
-			public const int background2 = 2131165282;
+			public const int Background2_mini = 2131165282;
 			
 			// aapt resource value: 0x7F070063
 			public const int bg_1 = 2131165283;

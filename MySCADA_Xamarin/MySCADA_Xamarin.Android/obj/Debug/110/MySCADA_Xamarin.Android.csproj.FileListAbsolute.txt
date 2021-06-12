@@ -604,3 +604,7 @@ D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MyS
 D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\res\drawable\motor_on_6.png
 D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\res\drawable\motor_on_7.png
 D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\res\drawable\background2_mini.png
+D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\bin\Debug\S7.Net.dll
+D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\android\assets\S7.Net.dll
+D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\android\assets\Microsoft.CSharp.dll
+D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\android\assets\Microsoft.CSharp.pdb

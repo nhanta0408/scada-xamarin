@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ZYFSZHRb0CzylDYzOFO9U8Viauq+DISEwuaOx7UstgWdQSsw8sNQeox/s6OS3xlX0Xf9wCygSfjepnUxuQ+s1g==",
+  "dgSpecHash": "dZawpi1zWmVLVS30CafJHpaoLwbw6zsp7/lsWqFjfFDxjq8QvTBBwGiEFLqGxSsm0OnRKsqZ3FtSKBdRQ3niGg==",
   "success": true,
   "projectFilePath": "D:\\Study Document\\PGS202\\SCADA\\CSharpProject\\MySCADA_Xamarin\\MySCADA_Xamarin\\MySCADA_Xamarin.iOS\\MySCADA_Xamarin.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\nhant\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\nhant\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"

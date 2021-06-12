@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySCADA;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,7 @@ namespace MySCADA_Xamarin
     public partial class MotorFaceplate : ContentPage
     {
         private int _id;
+        public  SCADA parent;
         public MotorFaceplate(int id)
         {
             InitializeComponent();

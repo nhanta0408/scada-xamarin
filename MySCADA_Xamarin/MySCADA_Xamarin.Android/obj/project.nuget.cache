@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "poESHyLytqGjdrDLoyCFwyGuRp1Coe6k/q5Mu0QhzFZtO3OrLPNDGhLXkXRLs2+uX3Sec0RsCwbQIZKQiX7Ybw==",
+  "dgSpecHash": "mwNfiDodJqJr0RsxfgqR5wjNROKAjvU9ZS53ytzvnFig/mWFmBFqHarNJ3pCVkkUhwki3P1WhBKFVabIV+1fXA==",
   "success": true,
   "projectFilePath": "D:\\Study Document\\PGS202\\SCADA\\CSharpProject\\MySCADA_Xamarin\\MySCADA_Xamarin\\MySCADA_Xamarin.Android\\MySCADA_Xamarin.Android.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\nhant\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\nhant\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.activity\\1.1.0.5\\xamarin.androidx.activity.1.1.0.5.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.annotation\\1.1.0.8\\xamarin.androidx.annotation.1.1.0.8.nupkg.sha512",
