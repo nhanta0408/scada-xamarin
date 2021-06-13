@@ -12,7 +12,7 @@ namespace MySCADA
     {
         public ArrayList Tasks = new ArrayList();
         public ArrayList MainScreens = new ArrayList();
-        public ArrayList Motor_faceplates = new ArrayList();
+        public List<MotorFaceplate> Motor_faceplates = new List<MotorFaceplate>();
         public ArrayList Graph = new ArrayList();
         public ArrayList Historians = new ArrayList();
         public ArrayList Alarms = new ArrayList();

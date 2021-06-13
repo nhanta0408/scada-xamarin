@@ -5,6 +5,11 @@
              Title="Trang chính">
     <ContentPage.Content>
         <AbsoluteLayout>
+            <Label Text="Hệ thống SCADA trạm bơm sử dụng Smartphone" FontSize="25" FontAttributes="Bold" HorizontalTextAlignment="Center" AbsoluteLayout.LayoutBounds="0.5, 0.07, 0.8, 0.1" AbsoluteLayout.LayoutFlags="All"/>
+
+            <Button x:Name="Button_StartAuto"  Text="START" Pressed="Button_StartAuto_Pressed" Released="Button_StartAuto_Released" FontSize="18" FontAttributes="Bold" AbsoluteLayout.LayoutBounds="0.3, 0.8, 0.25, 0.08" AbsoluteLayout.LayoutFlags="All"/>
+            <Button x:Name="Button_StopAuto" Text="STOP" Pressed="Button_StopAuto_Pressed" Released="Button_StopAuto_Released" FontSize="18" FontAttributes="Bold" AbsoluteLayout.LayoutBounds="0.7, 0.8, 0.25, 0.08" AbsoluteLayout.LayoutFlags="All"/>
+
             <Image Source="Background2_mini.png"  AbsoluteLayout.LayoutBounds="0.3,0.3,0.69,0.6" AbsoluteLayout.LayoutFlags="All"/>
             <ProgressBar x:Name="progress_Level" Progress="0.9"  ScaleY="4.3" ScaleX="0.85" Rotation="-90" AbsoluteLayout.LayoutBounds="0.51,0.405, 0.5, 0.3" AbsoluteLayout.LayoutFlags="All"/>
             <Image x:Name="img_Motor1" Source="Motor_off_1.png"  AbsoluteLayout.LayoutBounds="0.12,0.288,0.17,0.17" AbsoluteLayout.LayoutFlags="All">
@@ -25,7 +30,7 @@
                 </Image.GestureRecognizers>
             </Image>
             
-            
+            <!--
             <Label x:Name="label_Motor1" Text="Motor 1" FontSize="20" AbsoluteLayout.LayoutBounds="0.1, 0.8, 0.2, 0.1" AbsoluteLayout.LayoutFlags="All"/>
             <Picker x:Name="pickerMode1" SelectedIndexChanged="pickerMode1_SelectedIndexChanged" AbsoluteLayout.LayoutBounds="0.1, 0.8, 0.2, 0.1" AbsoluteLayout.LayoutFlags="All" HorizontalTextAlignment="Center">
             </Picker>
@@ -45,6 +50,8 @@
             </Picker>
             <Button x:Name="Button_Start3" Pressed="Button_Start3_Pressed" Released="Button_Start3_Released" Text="START" FontSize="12" AbsoluteLayout.LayoutBounds="0.9, 0.9, 0.2, 0.06" AbsoluteLayout.LayoutFlags="All"/>
             <Button x:Name="Button_Stop3" Pressed="Button_Stop3_Pressed" Released="Button_Stop3_Released" Text="STOP" FontSize="12" AbsoluteLayout.LayoutBounds="0.9, 0.98, 0.2, 0.06" AbsoluteLayout.LayoutFlags="All"/>
+        -->
+        
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

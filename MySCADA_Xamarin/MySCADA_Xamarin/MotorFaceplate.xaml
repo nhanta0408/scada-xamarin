@@ -1,16 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MySCADA_Xamarin.MotorFaceplate">
+             x:Class="MySCADA_Xamarin.MotorFaceplate"
+             Title="Motor">
     <ContentPage.Content>
         <AbsoluteLayout  >
             <Label x:Name="label_Motor" Text="Motor " FontSize="28" AbsoluteLayout.LayoutBounds="0.5, 0.1, 0.25, 0.5" AbsoluteLayout.LayoutFlags="All"/>
             <Label Text="Chọn chế độ: " FontSize="20" AbsoluteLayout.LayoutBounds="0.3, 0.2, 0.4, 0.1" AbsoluteLayout.LayoutFlags="All"/>
-            <Picker x:Name="pickerMode" AbsoluteLayout.LayoutBounds="0.7, 0.16, 0.3, 0.1" AbsoluteLayout.LayoutFlags="All" HorizontalTextAlignment="Center">
+            <Picker x:Name="pickerMode" SelectedIndexChanged="pickerMode_SelectedIndexChanged" AbsoluteLayout.LayoutBounds="0.7, 0.16, 0.3, 0.1" AbsoluteLayout.LayoutFlags="All" HorizontalTextAlignment="Center">
             </Picker>
-            <Button x:Name="Button_Start" Text="START" AbsoluteLayout.LayoutBounds="0.25, 0.35, 0.25, 0.08" AbsoluteLayout.LayoutFlags="All"/>
-            <Button x:Name="Button_Stop" Text="STOP" AbsoluteLayout.LayoutBounds="0.25, 0.45, 0.25, 0.08" AbsoluteLayout.LayoutFlags="All"/>
-            <BoxView Color="Gray" AbsoluteLayout.LayoutBounds="0.65, 0.4, 0.2, 0.12" AbsoluteLayout.LayoutFlags="All"/>
+            <Button x:Name="Button_Start" Pressed="Button_Start_Pressed" Released="Button_Start_Released" Text="START" AbsoluteLayout.LayoutBounds="0.25, 0.35, 0.25, 0.08" AbsoluteLayout.LayoutFlags="All"/>
+            <Button x:Name="Button_Stop" Pressed="Button_Stop_Pressed" Released="Button_Stop_Released" Text="STOP" AbsoluteLayout.LayoutBounds="0.25, 0.45, 0.25, 0.08" AbsoluteLayout.LayoutFlags="All"/>
+            <BoxView x:Name="Light" Color="Gray" AbsoluteLayout.LayoutBounds="0.65, 0.4, 0.2, 0.12" AbsoluteLayout.LayoutFlags="All"/>
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

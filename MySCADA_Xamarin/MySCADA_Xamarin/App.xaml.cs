@@ -11,6 +11,7 @@ namespace MySCADA_Xamarin
     { 
         public static MainScreen mainScreen;
         public static SCADA Root;
+
         public App()
         {
             InitializeComponent();
@@ -83,17 +84,18 @@ namespace MySCADA_Xamarin
             Root.RunTask("Task_1");
 
 
-            //mainScreen = new MainScreen();
-            //MotorFaceplate motorFaceplate1 = new MotorFaceplate(1);
-            //MotorFaceplate motorFaceplate2 = new MotorFaceplate(2);
-            //MotorFaceplate motorFaceplate3 = new MotorFaceplate(3);
-            //Root.AddFaceplate(motorFaceplate1);
-            //Root.AddFaceplate(motorFaceplate2);
-            //Root.AddFaceplate(motorFaceplate3);
+            mainScreen = new MainScreen();
+            MotorFaceplate motorFaceplate1 = new MotorFaceplate(1);
+            MotorFaceplate motorFaceplate2 = new MotorFaceplate(2);
+            MotorFaceplate motorFaceplate3 = new MotorFaceplate(3);
+            Root.AddFaceplate(motorFaceplate1);
+            Root.AddFaceplate(motorFaceplate2);
+            Root.AddFaceplate(motorFaceplate3);
             //Root.AddMainScreen(mainScreen);
 
 
-            MainPage = new NavigationPage(new MainScreen());
+            //MainPage = new NavigationPage(new MainScreen());
+            MainPage = new AppShell();
             
 
         }
