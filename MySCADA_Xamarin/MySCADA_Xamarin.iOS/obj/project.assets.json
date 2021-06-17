@@ -2,6 +2,120 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
+      "C1.DataCollection/1.0.20211.34": {
+        "type": "package",
+        "dependencies": {
+          "System.Linq.Parallel": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.1/C1.DataCollection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/C1.DataCollection.dll": {}
+        }
+      },
+      "C1.iOS.Chart/4.8.20211.501": {
+        "type": "package",
+        "dependencies": {
+          "C1.DataCollection": "1.0.20211.34",
+          "C1.iOS.Core": "[4.8.20211.501]"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/C1.iOS.Chart.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/C1.iOS.Chart.dll": {}
+        },
+        "build": {
+          "buildTransitive/Xamarin.iOS10/C1.iOS.Chart.targets": {}
+        }
+      },
+      "C1.iOS.Core/4.8.20211.501": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/C1.iOS.Core.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/C1.iOS.Core.dll": {}
+        },
+        "build": {
+          "buildTransitive/Xamarin.iOS10/C1.iOS.Core.targets": {}
+        }
+      },
+      "C1.Xamarin.Forms.Chart/4.8.20211.501": {
+        "type": "package",
+        "dependencies": {
+          "C1.DataCollection": "1.0.20211.34",
+          "C1.Xamarin.Forms.Core": "[4.8.20211.501]",
+          "C1.iOS.Chart": "[4.8.20211.501]",
+          "System.ComponentModel": "4.3.0",
+          "System.Xml.XmlSerializer": "4.3.0",
+          "Xamarin.Forms": "4.8.0.1560"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/C1.Xamarin.Forms.Chart.Platform.iOS.dll": {},
+          "lib/Xamarin.iOS10/C1.Xamarin.Forms.Chart.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/C1.Xamarin.Forms.Chart.Platform.iOS.dll": {},
+          "lib/Xamarin.iOS10/C1.Xamarin.Forms.Chart.dll": {}
+        },
+        "build": {
+          "buildTransitive/Xamarin.iOS10/C1.Xamarin.Forms.Chart.targets": {}
+        }
+      },
+      "C1.Xamarin.Forms.Core/4.8.20211.501": {
+        "type": "package",
+        "dependencies": {
+          "C1.iOS.Core": "[4.8.20211.501]",
+          "System.Xml.XmlSerializer": "4.3.0",
+          "Xamarin.Forms": "4.8.0.1560"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/C1.Xamarin.Forms.Core.Platform.iOS.dll": {},
+          "lib/Xamarin.iOS10/C1.Xamarin.Forms.Core.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/C1.Xamarin.Forms.Core.Platform.iOS.dll": {},
+          "lib/Xamarin.iOS10/C1.Xamarin.Forms.Core.dll": {}
+        },
+        "build": {
+          "buildTransitive/Xamarin.iOS10/C1.Xamarin.Forms.Core.targets": {}
+        }
+      },
+      "Microcharts/0.9.5.9": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "2.80.2",
+          "SkiaSharp.Views": "2.80.2"
+        },
+        "compile": {
+          "lib/xamarinios1.0/Microcharts.dll": {},
+          "lib/xamarinios1.0/Microcharts.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios1.0/Microcharts.dll": {},
+          "lib/xamarinios1.0/Microcharts.iOS.dll": {}
+        }
+      },
+      "Microcharts.Forms/0.9.5.9": {
+        "type": "package",
+        "dependencies": {
+          "Microcharts": "0.9.5.9",
+          "SkiaSharp": "2.80.2",
+          "SkiaSharp.Views.Forms": "2.80.2",
+          "System.ValueTuple": "4.5.0",
+          "Xamarin.Forms": "4.7.0.1351"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microcharts.Forms.dll": {},
+          "lib/netstandard2.0/Microcharts.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microcharts.Forms.dll": {},
+          "lib/netstandard2.0/Microcharts.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "frameworkAssemblies": [
@@ -14,7 +128,99 @@
           "lib/xamarinios10/_._": {}
         }
       },
+      "SkiaSharp/2.80.2": {
+        "type": "package",
+        "compile": {
+          "lib/xamarinios1.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios1.0/SkiaSharp.dll": {}
+        },
+        "build": {
+          "buildTransitive/xamarinios1.0/SkiaSharp.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/osx/native/libSkiaSharp.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          },
+          "runtimes/win-arm64/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "SkiaSharp.Views/2.80.2": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "2.80.2"
+        },
+        "compile": {
+          "lib/xamarinios1.0/SkiaSharp.Views.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios1.0/SkiaSharp.Views.iOS.dll": {}
+        }
+      },
+      "SkiaSharp.Views.Forms/2.80.2": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "2.80.2",
+          "SkiaSharp.Views": "2.80.2",
+          "Xamarin.Forms": "4.6.0.772"
+        },
+        "compile": {
+          "ref/xamarinios1.0/SkiaSharp.Views.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios1.0/SkiaSharp.Views.Forms.dll": {}
+        }
+      },
+      "System.ComponentModel/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "System.Linq.Parallel/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "System.Xml.XmlSerializer/4.3.0": {
         "type": "package",
         "compile": {
           "ref/xamarinios10/_._": {}
@@ -167,6 +373,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "C1.Xamarin.Forms.Chart": "4.8.20211.501",
+          "Microcharts.Forms": "0.9.5.9",
           "Microsoft.CSharp": "4.7.0",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012"
@@ -180,6 +388,120 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
+      "C1.DataCollection/1.0.20211.34": {
+        "type": "package",
+        "dependencies": {
+          "System.Linq.Parallel": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.1/C1.DataCollection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/C1.DataCollection.dll": {}
+        }
+      },
+      "C1.iOS.Chart/4.8.20211.501": {
+        "type": "package",
+        "dependencies": {
+          "C1.DataCollection": "1.0.20211.34",
+          "C1.iOS.Core": "[4.8.20211.501]"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/C1.iOS.Chart.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/C1.iOS.Chart.dll": {}
+        },
+        "build": {
+          "buildTransitive/Xamarin.iOS10/C1.iOS.Chart.targets": {}
+        }
+      },
+      "C1.iOS.Core/4.8.20211.501": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/C1.iOS.Core.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/C1.iOS.Core.dll": {}
+        },
+        "build": {
+          "buildTransitive/Xamarin.iOS10/C1.iOS.Core.targets": {}
+        }
+      },
+      "C1.Xamarin.Forms.Chart/4.8.20211.501": {
+        "type": "package",
+        "dependencies": {
+          "C1.DataCollection": "1.0.20211.34",
+          "C1.Xamarin.Forms.Core": "[4.8.20211.501]",
+          "C1.iOS.Chart": "[4.8.20211.501]",
+          "System.ComponentModel": "4.3.0",
+          "System.Xml.XmlSerializer": "4.3.0",
+          "Xamarin.Forms": "4.8.0.1560"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/C1.Xamarin.Forms.Chart.Platform.iOS.dll": {},
+          "lib/Xamarin.iOS10/C1.Xamarin.Forms.Chart.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/C1.Xamarin.Forms.Chart.Platform.iOS.dll": {},
+          "lib/Xamarin.iOS10/C1.Xamarin.Forms.Chart.dll": {}
+        },
+        "build": {
+          "buildTransitive/Xamarin.iOS10/C1.Xamarin.Forms.Chart.targets": {}
+        }
+      },
+      "C1.Xamarin.Forms.Core/4.8.20211.501": {
+        "type": "package",
+        "dependencies": {
+          "C1.iOS.Core": "[4.8.20211.501]",
+          "System.Xml.XmlSerializer": "4.3.0",
+          "Xamarin.Forms": "4.8.0.1560"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/C1.Xamarin.Forms.Core.Platform.iOS.dll": {},
+          "lib/Xamarin.iOS10/C1.Xamarin.Forms.Core.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/C1.Xamarin.Forms.Core.Platform.iOS.dll": {},
+          "lib/Xamarin.iOS10/C1.Xamarin.Forms.Core.dll": {}
+        },
+        "build": {
+          "buildTransitive/Xamarin.iOS10/C1.Xamarin.Forms.Core.targets": {}
+        }
+      },
+      "Microcharts/0.9.5.9": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "2.80.2",
+          "SkiaSharp.Views": "2.80.2"
+        },
+        "compile": {
+          "lib/xamarinios1.0/Microcharts.dll": {},
+          "lib/xamarinios1.0/Microcharts.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios1.0/Microcharts.dll": {},
+          "lib/xamarinios1.0/Microcharts.iOS.dll": {}
+        }
+      },
+      "Microcharts.Forms/0.9.5.9": {
+        "type": "package",
+        "dependencies": {
+          "Microcharts": "0.9.5.9",
+          "SkiaSharp": "2.80.2",
+          "SkiaSharp.Views.Forms": "2.80.2",
+          "System.ValueTuple": "4.5.0",
+          "Xamarin.Forms": "4.7.0.1351"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microcharts.Forms.dll": {},
+          "lib/netstandard2.0/Microcharts.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microcharts.Forms.dll": {},
+          "lib/netstandard2.0/Microcharts.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "frameworkAssemblies": [
@@ -192,7 +514,81 @@
           "lib/xamarinios10/_._": {}
         }
       },
+      "SkiaSharp/2.80.2": {
+        "type": "package",
+        "compile": {
+          "lib/xamarinios1.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios1.0/SkiaSharp.dll": {}
+        },
+        "build": {
+          "buildTransitive/xamarinios1.0/SkiaSharp.targets": {}
+        }
+      },
+      "SkiaSharp.Views/2.80.2": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "2.80.2"
+        },
+        "compile": {
+          "lib/xamarinios1.0/SkiaSharp.Views.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios1.0/SkiaSharp.Views.iOS.dll": {}
+        }
+      },
+      "SkiaSharp.Views.Forms/2.80.2": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "2.80.2",
+          "SkiaSharp.Views": "2.80.2",
+          "Xamarin.Forms": "4.6.0.772"
+        },
+        "compile": {
+          "ref/xamarinios1.0/SkiaSharp.Views.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios1.0/SkiaSharp.Views.Forms.dll": {}
+        }
+      },
+      "System.ComponentModel/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "System.Linq.Parallel/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "System.Xml.XmlSerializer/4.3.0": {
         "type": "package",
         "compile": {
           "ref/xamarinios10/_._": {}
@@ -345,6 +741,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "C1.Xamarin.Forms.Chart": "4.8.20211.501",
+          "Microcharts.Forms": "0.9.5.9",
           "Microsoft.CSharp": "4.7.0",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012"
@@ -358,6 +756,120 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
+      "C1.DataCollection/1.0.20211.34": {
+        "type": "package",
+        "dependencies": {
+          "System.Linq.Parallel": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.1/C1.DataCollection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/C1.DataCollection.dll": {}
+        }
+      },
+      "C1.iOS.Chart/4.8.20211.501": {
+        "type": "package",
+        "dependencies": {
+          "C1.DataCollection": "1.0.20211.34",
+          "C1.iOS.Core": "[4.8.20211.501]"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/C1.iOS.Chart.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/C1.iOS.Chart.dll": {}
+        },
+        "build": {
+          "buildTransitive/Xamarin.iOS10/C1.iOS.Chart.targets": {}
+        }
+      },
+      "C1.iOS.Core/4.8.20211.501": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/C1.iOS.Core.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/C1.iOS.Core.dll": {}
+        },
+        "build": {
+          "buildTransitive/Xamarin.iOS10/C1.iOS.Core.targets": {}
+        }
+      },
+      "C1.Xamarin.Forms.Chart/4.8.20211.501": {
+        "type": "package",
+        "dependencies": {
+          "C1.DataCollection": "1.0.20211.34",
+          "C1.Xamarin.Forms.Core": "[4.8.20211.501]",
+          "C1.iOS.Chart": "[4.8.20211.501]",
+          "System.ComponentModel": "4.3.0",
+          "System.Xml.XmlSerializer": "4.3.0",
+          "Xamarin.Forms": "4.8.0.1560"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/C1.Xamarin.Forms.Chart.Platform.iOS.dll": {},
+          "lib/Xamarin.iOS10/C1.Xamarin.Forms.Chart.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/C1.Xamarin.Forms.Chart.Platform.iOS.dll": {},
+          "lib/Xamarin.iOS10/C1.Xamarin.Forms.Chart.dll": {}
+        },
+        "build": {
+          "buildTransitive/Xamarin.iOS10/C1.Xamarin.Forms.Chart.targets": {}
+        }
+      },
+      "C1.Xamarin.Forms.Core/4.8.20211.501": {
+        "type": "package",
+        "dependencies": {
+          "C1.iOS.Core": "[4.8.20211.501]",
+          "System.Xml.XmlSerializer": "4.3.0",
+          "Xamarin.Forms": "4.8.0.1560"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/C1.Xamarin.Forms.Core.Platform.iOS.dll": {},
+          "lib/Xamarin.iOS10/C1.Xamarin.Forms.Core.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/C1.Xamarin.Forms.Core.Platform.iOS.dll": {},
+          "lib/Xamarin.iOS10/C1.Xamarin.Forms.Core.dll": {}
+        },
+        "build": {
+          "buildTransitive/Xamarin.iOS10/C1.Xamarin.Forms.Core.targets": {}
+        }
+      },
+      "Microcharts/0.9.5.9": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "2.80.2",
+          "SkiaSharp.Views": "2.80.2"
+        },
+        "compile": {
+          "lib/xamarinios1.0/Microcharts.dll": {},
+          "lib/xamarinios1.0/Microcharts.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios1.0/Microcharts.dll": {},
+          "lib/xamarinios1.0/Microcharts.iOS.dll": {}
+        }
+      },
+      "Microcharts.Forms/0.9.5.9": {
+        "type": "package",
+        "dependencies": {
+          "Microcharts": "0.9.5.9",
+          "SkiaSharp": "2.80.2",
+          "SkiaSharp.Views.Forms": "2.80.2",
+          "System.ValueTuple": "4.5.0",
+          "Xamarin.Forms": "4.7.0.1351"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microcharts.Forms.dll": {},
+          "lib/netstandard2.0/Microcharts.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microcharts.Forms.dll": {},
+          "lib/netstandard2.0/Microcharts.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "frameworkAssemblies": [
@@ -370,7 +882,84 @@
           "lib/xamarinios10/_._": {}
         }
       },
+      "SkiaSharp/2.80.2": {
+        "type": "package",
+        "compile": {
+          "lib/xamarinios1.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios1.0/SkiaSharp.dll": {}
+        },
+        "native": {
+          "runtimes/win-x64/native/libSkiaSharp.dll": {}
+        },
+        "build": {
+          "buildTransitive/xamarinios1.0/SkiaSharp.targets": {}
+        }
+      },
+      "SkiaSharp.Views/2.80.2": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "2.80.2"
+        },
+        "compile": {
+          "lib/xamarinios1.0/SkiaSharp.Views.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios1.0/SkiaSharp.Views.iOS.dll": {}
+        }
+      },
+      "SkiaSharp.Views.Forms/2.80.2": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "2.80.2",
+          "SkiaSharp.Views": "2.80.2",
+          "Xamarin.Forms": "4.6.0.772"
+        },
+        "compile": {
+          "ref/xamarinios1.0/SkiaSharp.Views.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios1.0/SkiaSharp.Views.Forms.dll": {}
+        }
+      },
+      "System.ComponentModel/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "System.Linq.Parallel/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "System.Xml.XmlSerializer/4.3.0": {
         "type": "package",
         "compile": {
           "ref/xamarinios10/_._": {}
@@ -523,6 +1112,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "C1.Xamarin.Forms.Chart": "4.8.20211.501",
+          "Microcharts.Forms": "0.9.5.9",
           "Microsoft.CSharp": "4.7.0",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012"
@@ -536,6 +1127,120 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
+      "C1.DataCollection/1.0.20211.34": {
+        "type": "package",
+        "dependencies": {
+          "System.Linq.Parallel": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.1/C1.DataCollection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/C1.DataCollection.dll": {}
+        }
+      },
+      "C1.iOS.Chart/4.8.20211.501": {
+        "type": "package",
+        "dependencies": {
+          "C1.DataCollection": "1.0.20211.34",
+          "C1.iOS.Core": "[4.8.20211.501]"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/C1.iOS.Chart.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/C1.iOS.Chart.dll": {}
+        },
+        "build": {
+          "buildTransitive/Xamarin.iOS10/C1.iOS.Chart.targets": {}
+        }
+      },
+      "C1.iOS.Core/4.8.20211.501": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/C1.iOS.Core.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/C1.iOS.Core.dll": {}
+        },
+        "build": {
+          "buildTransitive/Xamarin.iOS10/C1.iOS.Core.targets": {}
+        }
+      },
+      "C1.Xamarin.Forms.Chart/4.8.20211.501": {
+        "type": "package",
+        "dependencies": {
+          "C1.DataCollection": "1.0.20211.34",
+          "C1.Xamarin.Forms.Core": "[4.8.20211.501]",
+          "C1.iOS.Chart": "[4.8.20211.501]",
+          "System.ComponentModel": "4.3.0",
+          "System.Xml.XmlSerializer": "4.3.0",
+          "Xamarin.Forms": "4.8.0.1560"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/C1.Xamarin.Forms.Chart.Platform.iOS.dll": {},
+          "lib/Xamarin.iOS10/C1.Xamarin.Forms.Chart.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/C1.Xamarin.Forms.Chart.Platform.iOS.dll": {},
+          "lib/Xamarin.iOS10/C1.Xamarin.Forms.Chart.dll": {}
+        },
+        "build": {
+          "buildTransitive/Xamarin.iOS10/C1.Xamarin.Forms.Chart.targets": {}
+        }
+      },
+      "C1.Xamarin.Forms.Core/4.8.20211.501": {
+        "type": "package",
+        "dependencies": {
+          "C1.iOS.Core": "[4.8.20211.501]",
+          "System.Xml.XmlSerializer": "4.3.0",
+          "Xamarin.Forms": "4.8.0.1560"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/C1.Xamarin.Forms.Core.Platform.iOS.dll": {},
+          "lib/Xamarin.iOS10/C1.Xamarin.Forms.Core.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/C1.Xamarin.Forms.Core.Platform.iOS.dll": {},
+          "lib/Xamarin.iOS10/C1.Xamarin.Forms.Core.dll": {}
+        },
+        "build": {
+          "buildTransitive/Xamarin.iOS10/C1.Xamarin.Forms.Core.targets": {}
+        }
+      },
+      "Microcharts/0.9.5.9": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "2.80.2",
+          "SkiaSharp.Views": "2.80.2"
+        },
+        "compile": {
+          "lib/xamarinios1.0/Microcharts.dll": {},
+          "lib/xamarinios1.0/Microcharts.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios1.0/Microcharts.dll": {},
+          "lib/xamarinios1.0/Microcharts.iOS.dll": {}
+        }
+      },
+      "Microcharts.Forms/0.9.5.9": {
+        "type": "package",
+        "dependencies": {
+          "Microcharts": "0.9.5.9",
+          "SkiaSharp": "2.80.2",
+          "SkiaSharp.Views.Forms": "2.80.2",
+          "System.ValueTuple": "4.5.0",
+          "Xamarin.Forms": "4.7.0.1351"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microcharts.Forms.dll": {},
+          "lib/netstandard2.0/Microcharts.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microcharts.Forms.dll": {},
+          "lib/netstandard2.0/Microcharts.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "frameworkAssemblies": [
@@ -548,7 +1253,84 @@
           "lib/xamarinios10/_._": {}
         }
       },
+      "SkiaSharp/2.80.2": {
+        "type": "package",
+        "compile": {
+          "lib/xamarinios1.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios1.0/SkiaSharp.dll": {}
+        },
+        "native": {
+          "runtimes/win-x86/native/libSkiaSharp.dll": {}
+        },
+        "build": {
+          "buildTransitive/xamarinios1.0/SkiaSharp.targets": {}
+        }
+      },
+      "SkiaSharp.Views/2.80.2": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "2.80.2"
+        },
+        "compile": {
+          "lib/xamarinios1.0/SkiaSharp.Views.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios1.0/SkiaSharp.Views.iOS.dll": {}
+        }
+      },
+      "SkiaSharp.Views.Forms/2.80.2": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "2.80.2",
+          "SkiaSharp.Views": "2.80.2",
+          "Xamarin.Forms": "4.6.0.772"
+        },
+        "compile": {
+          "ref/xamarinios1.0/SkiaSharp.Views.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios1.0/SkiaSharp.Views.Forms.dll": {}
+        }
+      },
+      "System.ComponentModel/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "System.Linq.Parallel/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "System.Xml.XmlSerializer/4.3.0": {
         "type": "package",
         "compile": {
           "ref/xamarinios10/_._": {}
@@ -701,6 +1483,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "C1.Xamarin.Forms.Chart": "4.8.20211.501",
+          "Microcharts.Forms": "0.9.5.9",
           "Microsoft.CSharp": "4.7.0",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012"
@@ -715,6 +1499,174 @@
     }
   },
   "libraries": {
+    "C1.DataCollection/1.0.20211.34": {
+      "sha512": "Kinr06Lz+IPNnuvNvaAYUc1DyKuP440gud5op3nhMozv1PAxn96jGnQ+OTgFDUnU/cb0seucSwuMhMrUE+7jLw==",
+      "type": "package",
+      "path": "c1.datacollection/1.0.20211.34",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "c1.datacollection.1.0.20211.34.nupkg.sha512",
+        "c1.datacollection.nuspec",
+        "images/icon.png",
+        "lib/netstandard1.1/C1.DataCollection.dll",
+        "lib/netstandard1.1/C1.DataCollection.xml",
+        "license_EN.txt"
+      ]
+    },
+    "C1.iOS.Chart/4.8.20211.501": {
+      "sha512": "dgC82XBOpfl5B8RBTnV1QaP0JcnZFjcAxJlu9dCdmLGzvtLCXhEJGdZJvMVFvKHOjXaMAmko/VOnsgB7cfGKPw==",
+      "type": "package",
+      "path": "c1.ios.chart/4.8.20211.501",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "buildTransitive/Xamarin.iOS10/C1.iOS.Chart.targets",
+        "c1.ios.chart.4.8.20211.501.nupkg.sha512",
+        "c1.ios.chart.nuspec",
+        "images/icon.png",
+        "lib/Xamarin.iOS10/C1.iOS.Chart.dll",
+        "lib/Xamarin.iOS10/C1.iOS.Chart.xml",
+        "license_EN.txt"
+      ]
+    },
+    "C1.iOS.Core/4.8.20211.501": {
+      "sha512": "MWL9lDBLiDpbWX5NrXgm10Z35ktxZ8rZaduVNrKPnBRqeJ37JT1HKT6unmujXqbU9edaYgJubVBRbcsnx1br2w==",
+      "type": "package",
+      "path": "c1.ios.core/4.8.20211.501",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "buildTransitive/Xamarin.iOS10/C1.iOS.Core.targets",
+        "c1.ios.core.4.8.20211.501.nupkg.sha512",
+        "c1.ios.core.nuspec",
+        "images/icon.png",
+        "lib/Xamarin.iOS10/C1.iOS.Core.dll",
+        "lib/Xamarin.iOS10/C1.iOS.Core.xml",
+        "license_EN.txt"
+      ]
+    },
+    "C1.Xamarin.Forms.Chart/4.8.20211.501": {
+      "sha512": "rFwD47pZMk1oOHIdxXcG/ExaqbiQHd5hKoVx8kQbKGoF7VL/R0Iqbq21Yp6+khNw3i2xg20NkmcFZSagjd5Wfg==",
+      "type": "package",
+      "path": "c1.xamarin.forms.chart/4.8.20211.501",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "buildTransitive/MonoAndroid10/C1.Xamarin.Forms.Chart.targets",
+        "buildTransitive/Xamarin.iOS10/C1.Xamarin.Forms.Chart.targets",
+        "buildTransitive/netstandard2.0/C1.Xamarin.Forms.Chart.targets",
+        "buildTransitive/uap10.0/C1.Xamarin.Forms.Chart.targets",
+        "c1.xamarin.forms.chart.4.8.20211.501.nupkg.sha512",
+        "c1.xamarin.forms.chart.nuspec",
+        "images/icon.png",
+        "lib/MonoAndroid10/C1.Xamarin.Forms.Chart.Platform.Android.dll",
+        "lib/MonoAndroid10/C1.Xamarin.Forms.Chart.Platform.Android.pdb",
+        "lib/MonoAndroid10/C1.Xamarin.Forms.Chart.Platform.Android.xml",
+        "lib/MonoAndroid10/C1.Xamarin.Forms.Chart.dll",
+        "lib/MonoAndroid10/C1.Xamarin.Forms.Chart.xml",
+        "lib/Xamarin.iOS10/C1.Xamarin.Forms.Chart.Platform.iOS.dll",
+        "lib/Xamarin.iOS10/C1.Xamarin.Forms.Chart.Platform.iOS.xml",
+        "lib/Xamarin.iOS10/C1.Xamarin.Forms.Chart.dll",
+        "lib/Xamarin.iOS10/C1.Xamarin.Forms.Chart.xml",
+        "lib/netstandard2.0/C1.Xamarin.Forms.Chart.dll",
+        "lib/netstandard2.0/C1.Xamarin.Forms.Chart.xml",
+        "lib/uap10.0/C1.UWP.Chart.dll",
+        "lib/uap10.0/C1.UWP.Chart.pri",
+        "lib/uap10.0/C1.UWP.Chart.xml",
+        "lib/uap10.0/C1.UWP.Chart/C1.UWP.Chart.xr.xml",
+        "lib/uap10.0/C1.UWP.Chart/themes/C1AxisScrollbar.xbf",
+        "lib/uap10.0/C1.UWP.Chart/themes/C1LineMarker.xbf",
+        "lib/uap10.0/C1.UWP.Chart/themes/C1RangeSelector.xbf",
+        "lib/uap10.0/C1.UWP.Chart/themes/C1RangeSlider.xbf",
+        "lib/uap10.0/C1.UWP.Chart/themes/Common.xbf",
+        "lib/uap10.0/C1.UWP.Chart/themes/Generic.xbf",
+        "lib/uap10.0/C1.Xamarin.Forms.Chart.Platform.UWP.dll",
+        "lib/uap10.0/C1.Xamarin.Forms.Chart.Platform.UWP.pri",
+        "lib/uap10.0/C1.Xamarin.Forms.Chart.Platform.UWP.xml",
+        "lib/uap10.0/C1.Xamarin.Forms.Chart.dll",
+        "lib/uap10.0/C1.Xamarin.Forms.Chart.xml",
+        "license_EN.txt"
+      ]
+    },
+    "C1.Xamarin.Forms.Core/4.8.20211.501": {
+      "sha512": "1eGqty1AP5Reb8/Clio24cqABKqXcFRKUQ7o/aN1yEWyJkKEQJI342y2zsxgdDz7xomB+gfDGWJoNkDoPTMatw==",
+      "type": "package",
+      "path": "c1.xamarin.forms.core/4.8.20211.501",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "buildTransitive/MonoAndroid10/C1.Xamarin.Forms.Core.targets",
+        "buildTransitive/Xamarin.iOS10/C1.Xamarin.Forms.Core.targets",
+        "buildTransitive/netstandard2.0/C1.Xamarin.Forms.Core.targets",
+        "buildTransitive/uap10.0/C1.Xamarin.Forms.Core.targets",
+        "c1.xamarin.forms.core.4.8.20211.501.nupkg.sha512",
+        "c1.xamarin.forms.core.nuspec",
+        "images/icon.png",
+        "lib/MonoAndroid10/C1.Xamarin.Forms.Core.Platform.Android.dll",
+        "lib/MonoAndroid10/C1.Xamarin.Forms.Core.Platform.Android.pdb",
+        "lib/MonoAndroid10/C1.Xamarin.Forms.Core.Platform.Android.xml",
+        "lib/MonoAndroid10/C1.Xamarin.Forms.Core.dll",
+        "lib/MonoAndroid10/C1.Xamarin.Forms.Core.xml",
+        "lib/Xamarin.iOS10/C1.Xamarin.Forms.Core.Platform.iOS.dll",
+        "lib/Xamarin.iOS10/C1.Xamarin.Forms.Core.Platform.iOS.xml",
+        "lib/Xamarin.iOS10/C1.Xamarin.Forms.Core.dll",
+        "lib/Xamarin.iOS10/C1.Xamarin.Forms.Core.xml",
+        "lib/netstandard2.0/C1.Xamarin.Forms.Core.dll",
+        "lib/netstandard2.0/C1.Xamarin.Forms.Core.xml",
+        "lib/uap10.0/C1.UWP.Core.dll",
+        "lib/uap10.0/C1.UWP.Core.pri",
+        "lib/uap10.0/C1.UWP.Core.xml",
+        "lib/uap10.0/C1.UWP.Core/C1.UWP.Core.xr.xml",
+        "lib/uap10.0/C1.UWP.Core/themes/C1FullscreenDialog.xbf",
+        "lib/uap10.0/C1.UWP.Core/themes/generic.xbf",
+        "lib/uap10.0/C1.UWP.DX.dll",
+        "lib/uap10.0/C1.UWP.DX.pri",
+        "lib/uap10.0/C1.UWP.DX.xml",
+        "lib/uap10.0/C1.Xamarin.Forms.Core.Platform.UWP.dll",
+        "lib/uap10.0/C1.Xamarin.Forms.Core.Platform.UWP.pri",
+        "lib/uap10.0/C1.Xamarin.Forms.Core.Platform.UWP.xml",
+        "lib/uap10.0/C1.Xamarin.Forms.Core.Platform.UWP/C1.Xamarin.Forms.Core.Platform.UWP.xr.xml",
+        "lib/uap10.0/C1.Xamarin.Forms.Core.Platform.UWP/themes/ToggleButton.xbf",
+        "lib/uap10.0/C1.Xamarin.Forms.Core.Platform.UWP/themes/generic.xbf",
+        "lib/uap10.0/C1.Xamarin.Forms.Core.dll",
+        "lib/uap10.0/C1.Xamarin.Forms.Core.xml",
+        "license_EN.txt"
+      ]
+    },
+    "Microcharts/0.9.5.9": {
+      "sha512": "oiaPjsC+l211tRXw17bxT7D1uPHLZG4wZq7w9h9w7LFX76s4ppLN9UGVkUQJ2vBammdFH0JXtbvEUVtbOq85UQ==",
+      "type": "package",
+      "path": "microcharts/0.9.5.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Microcharts.Droid.dll",
+        "lib/MonoAndroid10/Microcharts.dll",
+        "lib/netstandard2.0/Microcharts.dll",
+        "lib/uap10.0/Microcharts.Uwp.dll",
+        "lib/uap10.0/Microcharts.dll",
+        "lib/xamarinios1.0/Microcharts.dll",
+        "lib/xamarinios1.0/Microcharts.iOS.dll",
+        "lib/xamarinmac2.0/Microcharts.dll",
+        "lib/xamarinmac2.0/Microcharts.macOS.dll",
+        "microcharts.0.9.5.9.nupkg.sha512",
+        "microcharts.nuspec"
+      ]
+    },
+    "Microcharts.Forms/0.9.5.9": {
+      "sha512": "qWph+JII7fWqx/ObgqT0IQ9ICGTHSUfvXT1l+Yf/LlLK4DAhDdvn0AKKUatz2uvHy1xHmzBFS+nzdreOpBA2Vw==",
+      "type": "package",
+      "path": "microcharts.forms/0.9.5.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microcharts.Forms.dll",
+        "lib/netstandard2.0/Microcharts.dll",
+        "microcharts.forms.0.9.5.9.nupkg.sha512",
+        "microcharts.forms.nuspec"
+      ]
+    },
     "Microsoft.CSharp/4.7.0": {
       "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
       "type": "package",
@@ -784,6 +1736,276 @@
         "version.txt"
       ]
     },
+    "SkiaSharp/2.80.2": {
+      "sha512": "D25rzdCwh+3L+XyXqpNa+H/yiLJbE3/R3K/XexwHyQjGdzZvSufFW3oqf3En7hhqSIsxsJ8f5NEZ0J5W5wlGBg==",
+      "type": "package",
+      "path": "skiasharp/2.80.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/monoandroid1.0/SkiaSharp.targets",
+        "build/monoandroid1.0/arm/libSkiaSharp.so",
+        "build/monoandroid1.0/arm64/libSkiaSharp.so",
+        "build/monoandroid1.0/x64/libSkiaSharp.so",
+        "build/monoandroid1.0/x86/libSkiaSharp.so",
+        "build/net462/SkiaSharp.targets",
+        "build/tizen40/SkiaSharp.targets",
+        "build/tizen40/arm/libSkiaSharp.so",
+        "build/tizen40/x86/libSkiaSharp.so",
+        "build/xamarinios1.0/SkiaSharp.targets",
+        "build/xamarinios1.0/libSkiaSharp.framework/Info.plist",
+        "build/xamarinios1.0/libSkiaSharp.framework/Modules/module.modulemap",
+        "build/xamarinios1.0/libSkiaSharp.framework/_CodeSignature/CodeResources",
+        "build/xamarinios1.0/libSkiaSharp.framework/libSkiaSharp",
+        "build/xamarinmac2.0/SkiaSharp.targets",
+        "build/xamarintvos1.0/SkiaSharp.targets",
+        "build/xamarintvos1.0/libSkiaSharp.framework/Info.plist",
+        "build/xamarintvos1.0/libSkiaSharp.framework/Modules/module.modulemap",
+        "build/xamarintvos1.0/libSkiaSharp.framework/_CodeSignature/CodeResources",
+        "build/xamarintvos1.0/libSkiaSharp.framework/libSkiaSharp",
+        "build/xamarinwatchos1.0/SkiaSharp.targets",
+        "build/xamarinwatchos1.0/libSkiaSharp.framework/Info.plist",
+        "build/xamarinwatchos1.0/libSkiaSharp.framework/Modules/module.modulemap",
+        "build/xamarinwatchos1.0/libSkiaSharp.framework/_CodeSignature/CodeResources",
+        "build/xamarinwatchos1.0/libSkiaSharp.framework/libSkiaSharp",
+        "buildTransitive/monoandroid1.0/SkiaSharp.targets",
+        "buildTransitive/net462/SkiaSharp.targets",
+        "buildTransitive/tizen40/SkiaSharp.targets",
+        "buildTransitive/xamarinios1.0/SkiaSharp.targets",
+        "buildTransitive/xamarinmac2.0/SkiaSharp.targets",
+        "buildTransitive/xamarintvos1.0/SkiaSharp.targets",
+        "buildTransitive/xamarinwatchos1.0/SkiaSharp.targets",
+        "lib/monoandroid1.0/SkiaSharp.dll",
+        "lib/monoandroid1.0/SkiaSharp.xml",
+        "lib/net462/SkiaSharp.dll",
+        "lib/net462/SkiaSharp.xml",
+        "lib/netstandard1.3/SkiaSharp.dll",
+        "lib/netstandard1.3/SkiaSharp.xml",
+        "lib/netstandard2.0/SkiaSharp.dll",
+        "lib/netstandard2.0/SkiaSharp.xml",
+        "lib/tizen40/SkiaSharp.dll",
+        "lib/tizen40/SkiaSharp.xml",
+        "lib/uap10.0.10240/SkiaSharp.dll",
+        "lib/uap10.0.10240/SkiaSharp.xml",
+        "lib/uap10.0.16299/SkiaSharp.dll",
+        "lib/uap10.0.16299/SkiaSharp.xml",
+        "lib/xamarinios1.0/SkiaSharp.dll",
+        "lib/xamarinios1.0/SkiaSharp.xml",
+        "lib/xamarinmac2.0/SkiaSharp.dll",
+        "lib/xamarinmac2.0/SkiaSharp.xml",
+        "lib/xamarintvos1.0/SkiaSharp.dll",
+        "lib/xamarintvos1.0/SkiaSharp.xml",
+        "lib/xamarinwatchos1.0/SkiaSharp.dll",
+        "lib/xamarinwatchos1.0/SkiaSharp.xml",
+        "runtimes/osx/native/libSkiaSharp.dylib",
+        "runtimes/win-arm64/native/libSkiaSharp.dll",
+        "runtimes/win-x64/native/libSkiaSharp.dll",
+        "runtimes/win-x86/native/libSkiaSharp.dll",
+        "runtimes/win10-arm/nativeassets/uap10.0/libEGL.dll",
+        "runtimes/win10-arm/nativeassets/uap10.0/libGLESv2.dll",
+        "runtimes/win10-arm/nativeassets/uap10.0/libSkiaSharp.dll",
+        "runtimes/win10-arm64/nativeassets/uap10.0/libEGL.dll",
+        "runtimes/win10-arm64/nativeassets/uap10.0/libGLESv2.dll",
+        "runtimes/win10-arm64/nativeassets/uap10.0/libSkiaSharp.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/libEGL.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/libGLESv2.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/libSkiaSharp.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/libEGL.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/libGLESv2.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/libSkiaSharp.dll",
+        "skiasharp.2.80.2.nupkg.sha512",
+        "skiasharp.nuspec"
+      ]
+    },
+    "SkiaSharp.Views/2.80.2": {
+      "sha512": "qOvmMOZ2lkT6BTbmSNjsA46ugUeo6X6Vonok5RE3rYWpCEFxB1FvBqbKoaLY5XpdLWzyS3qinAuT2JLSyoPRvg==",
+      "type": "package",
+      "path": "skiasharp.views/2.80.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/monoandroid1.0/SkiaSharp.Views.Android.dll",
+        "lib/monoandroid1.0/SkiaSharp.Views.Android.xml",
+        "lib/net462/SkiaSharp.Views.Desktop.dll",
+        "lib/net462/SkiaSharp.Views.Desktop.xml",
+        "lib/tizen40/SkiaSharp.Views.Tizen.dll",
+        "lib/tizen40/SkiaSharp.Views.Tizen.xml",
+        "lib/uap10.0/SkiaSharp.Views.UWP.dll",
+        "lib/uap10.0/SkiaSharp.Views.UWP.xml",
+        "lib/xamarinios1.0/SkiaSharp.Views.iOS.dll",
+        "lib/xamarinios1.0/SkiaSharp.Views.iOS.xml",
+        "lib/xamarinmac2.0/SkiaSharp.Views.Mac.dll",
+        "lib/xamarinmac2.0/SkiaSharp.Views.Mac.xml",
+        "lib/xamarintvos1.0/SkiaSharp.Views.tvOS.dll",
+        "lib/xamarintvos1.0/SkiaSharp.Views.tvOS.xml",
+        "lib/xamarinwatchos1.0/SkiaSharp.Views.watchOS.dll",
+        "lib/xamarinwatchos1.0/SkiaSharp.Views.watchOS.xml",
+        "runtimes/win10-arm/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
+        "runtimes/win10-arm64/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
+        "skiasharp.views.2.80.2.nupkg.sha512",
+        "skiasharp.views.nuspec"
+      ]
+    },
+    "SkiaSharp.Views.Forms/2.80.2": {
+      "sha512": "8aRDb98O2cHymB94O8FBj85qMC+MYEY6591wBpHcwgfz4HMo4orSMApD5y8VDmHpA5KR0Yh2ija+HTylz/9CgA==",
+      "type": "package",
+      "path": "skiasharp.views.forms/2.80.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "build/net462/SkiaSharp.Views.Forms.targets",
+        "lib/monoandroid1.0/SkiaSharp.Views.Forms.dll",
+        "lib/monoandroid1.0/SkiaSharp.Views.Forms.xml",
+        "lib/net462/_._",
+        "lib/tizen40/SkiaSharp.Views.Forms.dll",
+        "lib/tizen40/SkiaSharp.Views.Forms.xml",
+        "lib/uap10.0/SkiaSharp.Views.Forms.dll",
+        "lib/uap10.0/SkiaSharp.Views.Forms.xml",
+        "lib/xamarinios1.0/SkiaSharp.Views.Forms.dll",
+        "lib/xamarinios1.0/SkiaSharp.Views.Forms.xml",
+        "lib/xamarinmac2.0/SkiaSharp.Views.Forms.dll",
+        "lib/xamarinmac2.0/SkiaSharp.Views.Forms.xml",
+        "ref/monoandroid1.0/SkiaSharp.Views.Forms.dll",
+        "ref/monoandroid1.0/SkiaSharp.Views.Forms.xml",
+        "ref/net462/_._",
+        "ref/netstandard1.3/SkiaSharp.Views.Forms.dll",
+        "ref/netstandard1.3/SkiaSharp.Views.Forms.xml",
+        "ref/netstandard2.0/SkiaSharp.Views.Forms.dll",
+        "ref/netstandard2.0/SkiaSharp.Views.Forms.xml",
+        "ref/tizen40/SkiaSharp.Views.Forms.dll",
+        "ref/tizen40/SkiaSharp.Views.Forms.xml",
+        "ref/uap10.0/SkiaSharp.Views.Forms.dll",
+        "ref/uap10.0/SkiaSharp.Views.Forms.xml",
+        "ref/xamarinios1.0/SkiaSharp.Views.Forms.dll",
+        "ref/xamarinios1.0/SkiaSharp.Views.Forms.xml",
+        "ref/xamarinmac2.0/SkiaSharp.Views.Forms.dll",
+        "ref/xamarinmac2.0/SkiaSharp.Views.Forms.xml",
+        "skiasharp.views.forms.2.80.2.nupkg.sha512",
+        "skiasharp.views.forms.nuspec"
+      ]
+    },
+    "System.ComponentModel/4.3.0": {
+      "sha512": "VyGn1jGRZVfxnh8EdvDCi71v3bMXrsu8aYJOwoV7SNDLVhiEqwP86pPMyRGsDsxhXAm2b3o9OIqeETfN5qfezw==",
+      "type": "package",
+      "path": "system.componentmodel/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/System.ComponentModel.dll",
+        "lib/netstandard1.3/System.ComponentModel.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/System.ComponentModel.dll",
+        "ref/netcore50/System.ComponentModel.xml",
+        "ref/netcore50/de/System.ComponentModel.xml",
+        "ref/netcore50/es/System.ComponentModel.xml",
+        "ref/netcore50/fr/System.ComponentModel.xml",
+        "ref/netcore50/it/System.ComponentModel.xml",
+        "ref/netcore50/ja/System.ComponentModel.xml",
+        "ref/netcore50/ko/System.ComponentModel.xml",
+        "ref/netcore50/ru/System.ComponentModel.xml",
+        "ref/netcore50/zh-hans/System.ComponentModel.xml",
+        "ref/netcore50/zh-hant/System.ComponentModel.xml",
+        "ref/netstandard1.0/System.ComponentModel.dll",
+        "ref/netstandard1.0/System.ComponentModel.xml",
+        "ref/netstandard1.0/de/System.ComponentModel.xml",
+        "ref/netstandard1.0/es/System.ComponentModel.xml",
+        "ref/netstandard1.0/fr/System.ComponentModel.xml",
+        "ref/netstandard1.0/it/System.ComponentModel.xml",
+        "ref/netstandard1.0/ja/System.ComponentModel.xml",
+        "ref/netstandard1.0/ko/System.ComponentModel.xml",
+        "ref/netstandard1.0/ru/System.ComponentModel.xml",
+        "ref/netstandard1.0/zh-hans/System.ComponentModel.xml",
+        "ref/netstandard1.0/zh-hant/System.ComponentModel.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.componentmodel.4.3.0.nupkg.sha512",
+        "system.componentmodel.nuspec"
+      ]
+    },
+    "System.Linq.Parallel/4.3.0": {
+      "sha512": "td7x21K8LalpjTWCzW/nQboQIFbq9i0r+PCyBBCdLWWnm4NBcdN18vpz/G9hCpUaCIfRL+ZxJNVTywlNlB1aLQ==",
+      "type": "package",
+      "path": "system.linq.parallel/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/System.Linq.Parallel.dll",
+        "lib/netstandard1.3/System.Linq.Parallel.dll",
+        "lib/portable-net45+win8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/System.Linq.Parallel.dll",
+        "ref/netcore50/System.Linq.Parallel.xml",
+        "ref/netcore50/de/System.Linq.Parallel.xml",
+        "ref/netcore50/es/System.Linq.Parallel.xml",
+        "ref/netcore50/fr/System.Linq.Parallel.xml",
+        "ref/netcore50/it/System.Linq.Parallel.xml",
+        "ref/netcore50/ja/System.Linq.Parallel.xml",
+        "ref/netcore50/ko/System.Linq.Parallel.xml",
+        "ref/netcore50/ru/System.Linq.Parallel.xml",
+        "ref/netcore50/zh-hans/System.Linq.Parallel.xml",
+        "ref/netcore50/zh-hant/System.Linq.Parallel.xml",
+        "ref/netstandard1.1/System.Linq.Parallel.dll",
+        "ref/netstandard1.1/System.Linq.Parallel.xml",
+        "ref/netstandard1.1/de/System.Linq.Parallel.xml",
+        "ref/netstandard1.1/es/System.Linq.Parallel.xml",
+        "ref/netstandard1.1/fr/System.Linq.Parallel.xml",
+        "ref/netstandard1.1/it/System.Linq.Parallel.xml",
+        "ref/netstandard1.1/ja/System.Linq.Parallel.xml",
+        "ref/netstandard1.1/ko/System.Linq.Parallel.xml",
+        "ref/netstandard1.1/ru/System.Linq.Parallel.xml",
+        "ref/netstandard1.1/zh-hans/System.Linq.Parallel.xml",
+        "ref/netstandard1.1/zh-hant/System.Linq.Parallel.xml",
+        "ref/portable-net45+win8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.linq.parallel.4.3.0.nupkg.sha512",
+        "system.linq.parallel.nuspec"
+      ]
+    },
     "System.Numerics.Vectors/4.5.0": {
       "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
       "type": "package",
@@ -829,6 +2051,121 @@
         "system.numerics.vectors.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "System.ValueTuple/4.5.0": {
+      "sha512": "okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
+      "type": "package",
+      "path": "system.valuetuple/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.ValueTuple.dll",
+        "lib/net461/System.ValueTuple.xml",
+        "lib/net47/System.ValueTuple.dll",
+        "lib/net47/System.ValueTuple.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.ValueTuple.dll",
+        "lib/netstandard1.0/System.ValueTuple.xml",
+        "lib/netstandard2.0/_._",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.ValueTuple.dll",
+        "ref/net47/System.ValueTuple.dll",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard2.0/_._",
+        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.valuetuple.4.5.0.nupkg.sha512",
+        "system.valuetuple.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Xml.XmlSerializer/4.3.0": {
+      "sha512": "MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
+      "type": "package",
+      "path": "system.xml.xmlserializer/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/System.Xml.XmlSerializer.dll",
+        "lib/netstandard1.3/System.Xml.XmlSerializer.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/System.Xml.XmlSerializer.dll",
+        "ref/netcore50/System.Xml.XmlSerializer.xml",
+        "ref/netcore50/de/System.Xml.XmlSerializer.xml",
+        "ref/netcore50/es/System.Xml.XmlSerializer.xml",
+        "ref/netcore50/fr/System.Xml.XmlSerializer.xml",
+        "ref/netcore50/it/System.Xml.XmlSerializer.xml",
+        "ref/netcore50/ja/System.Xml.XmlSerializer.xml",
+        "ref/netcore50/ko/System.Xml.XmlSerializer.xml",
+        "ref/netcore50/ru/System.Xml.XmlSerializer.xml",
+        "ref/netcore50/zh-hans/System.Xml.XmlSerializer.xml",
+        "ref/netcore50/zh-hant/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.0/System.Xml.XmlSerializer.dll",
+        "ref/netstandard1.0/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.0/de/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.0/es/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.0/fr/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.0/it/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.0/ja/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.0/ko/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.0/ru/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.0/zh-hans/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.0/zh-hant/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.3/System.Xml.XmlSerializer.dll",
+        "ref/netstandard1.3/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.3/de/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.3/es/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.3/fr/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.3/it/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.3/ja/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.3/ko/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.3/ru/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.3/zh-hans/System.Xml.XmlSerializer.xml",
+        "ref/netstandard1.3/zh-hant/System.Xml.XmlSerializer.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll",
+        "system.xml.xmlserializer.4.3.0.nupkg.sha512",
+        "system.xml.xmlserializer.nuspec"
       ]
     },
     "Xamarin.Essentials/1.6.1": {
@@ -1106,6 +2443,8 @@
   },
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
+      "C1.Xamarin.Forms.Chart >= 4.8.20211.501",
+      "Microcharts >= 0.9.5.9",
       "MySCADA_Xamarin >= 1.0.0",
       "Xamarin.Essentials >= 1.6.1",
       "Xamarin.Forms >= 5.0.0.2012"
@@ -1153,6 +2492,14 @@
     "frameworks": {
       "xamarinios10": {
         "dependencies": {
+          "C1.Xamarin.Forms.Chart": {
+            "target": "Package",
+            "version": "[4.8.20211.501, )"
+          },
+          "Microcharts": {
+            "target": "Package",
+            "version": "[0.9.5.9, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.6.1, )"

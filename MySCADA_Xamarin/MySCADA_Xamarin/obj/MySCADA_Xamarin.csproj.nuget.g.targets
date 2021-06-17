@@ -6,5 +6,7 @@
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="C:\Program Files (x86)\Microsoft\Xamarin\NuGet\xamarin.forms\5.0.0.2012\buildTransitive\Xamarin.Forms.targets" Condition="Exists('C:\Program Files (x86)\Microsoft\Xamarin\NuGet\xamarin.forms\5.0.0.2012\buildTransitive\Xamarin.Forms.targets')" />
     <Import Project="C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('C:\Program Files\dotnet\sdk\NuGetFallbackFolder\netstandard.library\2.0.3\build\netstandard2.0\NETStandard.Library.targets')" />
+    <Import Project="$(NuGetPackageRoot)c1.xamarin.forms.core\4.8.20211.501\buildTransitive\netstandard2.0\C1.Xamarin.Forms.Core.targets" Condition="Exists('$(NuGetPackageRoot)c1.xamarin.forms.core\4.8.20211.501\buildTransitive\netstandard2.0\C1.Xamarin.Forms.Core.targets')" />
+    <Import Project="$(NuGetPackageRoot)c1.xamarin.forms.chart\4.8.20211.501\buildTransitive\netstandard2.0\C1.Xamarin.Forms.Chart.targets" Condition="Exists('$(NuGetPackageRoot)c1.xamarin.forms.chart\4.8.20211.501\buildTransitive\netstandard2.0\C1.Xamarin.Forms.Chart.targets')" />
   </ImportGroup>
 </Project>

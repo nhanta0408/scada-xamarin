@@ -57,3 +57,16 @@ D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MyS
 D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.iOS\obj\iPhone\Debug\MySCADA_Xamarin.iOS.exe
 D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.iOS\obj\iPhone\Debug\MySCADA_Xamarin.iOS.pdb
 D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.iOS\bin\iPhone\Debug\S7.Net.dll
+D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.iOS\bin\iPhone\Debug\Microcharts.dll
+D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.iOS\bin\iPhone\Debug\Microcharts.iOS.dll
+D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.iOS\bin\iPhone\Debug\Microcharts.Forms.dll
+D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.iOS\bin\iPhone\Debug\SkiaSharp.dll
+D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.iOS\bin\iPhone\Debug\SkiaSharp.Views.iOS.dll
+D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.iOS\bin\iPhone\Debug\SkiaSharp.Views.Forms.dll
+D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.iOS\bin\iPhone\Debug\C1.DataCollection.dll
+D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.iOS\bin\iPhone\Debug\C1.iOS.Chart.dll
+D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.iOS\bin\iPhone\Debug\C1.iOS.Core.dll
+D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.iOS\bin\iPhone\Debug\C1.Xamarin.Forms.Chart.Platform.iOS.dll
+D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.iOS\bin\iPhone\Debug\C1.Xamarin.Forms.Chart.dll
+D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.iOS\bin\iPhone\Debug\C1.Xamarin.Forms.Core.Platform.iOS.dll
+D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.iOS\bin\iPhone\Debug\C1.Xamarin.Forms.Core.dll

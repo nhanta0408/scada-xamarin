@@ -93,6 +93,13 @@ namespace MySCADA_Xamarin
             Root.AddFaceplate(motorFaceplate3);
             //Root.AddMainScreen(mainScreen);
 
+            Historian levelHistorian = new Historian("Level", 8000);
+            Root.AddHistorian(levelHistorian);
+            Historian levelTimestampHistorian = new Historian("LevelTimestamp", 8000);
+            Root.AddHistorian(levelTimestampHistorian);
+
+            Alarm levelAlarm = new Alarm("Level");
+            Root.AddAlarm(levelAlarm);
 
             //MainPage = new NavigationPage(new MainScreen());
             MainPage = new AppShell();

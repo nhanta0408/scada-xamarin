@@ -17,3 +17,5 @@ D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MyS
 D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin\obj\Debug\netstandard2.0\MySCADA_Xamarin.csproj.CopyComplete
 D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin\obj\Debug\netstandard2.0\MainScreen.xaml.g.cs
 D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin\obj\Debug\netstandard2.0\Graph.xaml.g.cs
+D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin\obj\Debug\netstandard2.0\AlarmPage.xaml.g.cs

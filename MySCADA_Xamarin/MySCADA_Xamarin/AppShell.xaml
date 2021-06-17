@@ -81,7 +81,14 @@
     <FlyoutItem Title="Main Screen" Icon="icon_about.png">
         <ShellContent Route="MainScreen" ContentTemplate="{DataTemplate local:MainScreen}" />
     </FlyoutItem>
+    
+    <FlyoutItem Title="Graph" Icon="icon_about.png">
+        <ShellContent Route="Graph" ContentTemplate="{DataTemplate local:Graph}" />
+    </FlyoutItem>
 
+    <FlyoutItem Title="Alarm" Icon="icon_about.png">
+        <ShellContent Route="AlarmPage" ContentTemplate="{DataTemplate local:AlarmPage}" />
+    </FlyoutItem>
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->
 
 

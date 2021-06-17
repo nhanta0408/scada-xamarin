@@ -113,47 +113,47 @@ namespace MySCADA
         //            display.Engine();
         //    }
         //}
-        //public void AddHistorian(Historian historian)
-        //{
-        //    historian.Parent = this;
-        //    Historians.Add(historian);
-        //}
-        //public Historian FindHistorian(string name)
-        //{
-        //    Historian result = null;
-        //    foreach (var item in Historians)
-        //    {
-        //        var temp = (Historian)item;
-        //        if(temp.Name == name)
-        //        {
-        //            result = temp;
-        //        }
-        //    }
-        //    return result;
-        //}
+        public void AddHistorian(Historian historian)
+        {
+            historian.Parent = this;
+            Historians.Add(historian);
+        }
+        public Historian FindHistorian(string name)
+        {
+            Historian result = null;
+            foreach (var item in Historians)
+            {
+                var temp = (Historian)item;
+                if (temp.Name == name)
+                {
+                    result = temp;
+                }
+            }
+            return result;
+        }
         //public void AddGraph(LevelGraph levelGraph)
         //{
         //    levelGraph.Parent = this;
         //    Graph.Add(levelGraph);
         //}
-        //public void AddAlarm(Alarm alarm)
-        //{
-        //    alarm.Parent = this;
-        //    Alarms.Add(alarm);
-        //}
-        //public Alarm FindAlarm(string name)
-        //{
-        //    Alarm result = null;
-        //    foreach (var item in Alarms)
-        //    {
-        //        var temp = (Alarm)item;
-        //        if (temp.Name == name)
-        //        {
-        //            result = temp;
-        //        }
-        //    }
-        //    return result;
-        //}
+        public void AddAlarm(Alarm alarm)
+        {
+            alarm.Parent = this;
+            Alarms.Add(alarm);
+        }
+        public Alarm FindAlarm(string name)
+        {
+            Alarm result = null;
+            foreach (var item in Alarms)
+            {
+                var temp = (Alarm)item;
+                if (temp.Name == name)
+                {
+                    result = temp;
+                }
+            }
+            return result;
+        }
         //public void AddAlarmDisplay(AlarmDisplay alarmDisplay)
         //{
         //    alarmDisplay.Parent = this;
