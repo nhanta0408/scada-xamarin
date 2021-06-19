@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace MySCADA
 {
@@ -13,6 +14,7 @@ namespace MySCADA
         public dynamic Value { get; set; }
         public string AlarmCode { get; set; }
         public string Detail { get; set; }
+        public Color Color { get; set; }
         public AlarmTag(string name, DateTime timestamp, dynamic value, string alarmCode)
         {
             Name = name;

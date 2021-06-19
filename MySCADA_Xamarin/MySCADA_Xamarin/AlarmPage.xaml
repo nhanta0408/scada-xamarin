@@ -4,9 +4,23 @@
              x:Class="MySCADA_Xamarin.AlarmPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Alarm" />
-            <ListView x:Name="listViewAlarm" ItemsSource="{Binding ItemList}" HasUnevenRows="true" SeparatorVisibility="None">
+            <BoxView HeightRequest="30"/>
+            <Label Text="Cảnh báo hệ thống" FontSize="35" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <BoxView HeightRequest="30"/>
 
+            <!--"
+            <ListView x:Name="listViewAlarm" ItemsSource="{Binding ItemList}" HasUnevenRows="true" SeparatorVisibility="None">
+            </ListView>
+            -->
+            <ListView ItemsSource="{Binding AlarmTags}">
+                <ListView.ItemTemplate>
+
+                    <DataTemplate>
+
+                        <TextCell Text="{Binding Timestamp}"  Detail="{Binding Detail}"
+                                  TextColor="{Binding Color} " DetailColor="{Binding Color}" Height="50" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
             </ListView>
         </StackLayout>
     </ContentPage.Content>
