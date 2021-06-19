@@ -162,6 +162,15 @@
           "ref/netstandard2.0/SkiaSharp.Views.Forms.dll": {}
         }
       },
+      "Syncfusion.Licensing/19.1.0.69": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.Licensing.dll": {}
+        }
+      },
       "System.Buffers/4.4.0": {
         "type": "package",
         "compile": {
@@ -1173,6 +1182,35 @@
         "ref/xamarinmac2.0/SkiaSharp.Views.Forms.xml",
         "skiasharp.views.forms.2.80.2.nupkg.sha512",
         "skiasharp.views.forms.nuspec"
+      ]
+    },
+    "Syncfusion.Licensing/19.1.0.69": {
+      "sha512": "XbTWCcu7VkjbhIOFoAdheUTVyU6IruXlzmmBuCSKyUqVzMRxXKDadPD4hm8ObPBG9AwNcrG2B5ntL/xJAkNXWw==",
+      "type": "package",
+      "path": "syncfusion.licensing/19.1.0.69",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10.0/Syncfusion.Licensing.dll",
+        "lib/MonoAndroid90/Syncfusion.Licensing.dll",
+        "lib/Xamarin.Mac/Syncfusion.Licensing.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Licensing.dll",
+        "lib/net20/Syncfusion.Licensing.dll",
+        "lib/net35/Syncfusion.Licensing.dll",
+        "lib/net40/Syncfusion.Licensing.dll",
+        "lib/net45/Syncfusion.Licensing.dll",
+        "lib/net451/Syncfusion.Licensing.dll",
+        "lib/net46/Syncfusion.Licensing.dll",
+        "lib/net5.0/Syncfusion.Licensing.dll",
+        "lib/netcoreapp3.1/Syncfusion.Licensing.dll",
+        "lib/netstandard1.0/Syncfusion.Licensing.dll",
+        "lib/netstandard1.2/Syncfusion.Licensing.dll",
+        "lib/netstandard1.4/Syncfusion.Licensing.dll",
+        "lib/netstandard2.0/Syncfusion.Licensing.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
+        "lib/uap10.0/Syncfusion.Licensing.dll",
+        "syncfusion.licensing.19.1.0.69.nupkg.sha512",
+        "syncfusion.licensing.nuspec"
       ]
     },
     "System.Buffers/4.4.0": {
@@ -3539,6 +3577,7 @@
       "Microcharts.Forms >= 0.9.5.9",
       "Microsoft.CSharp >= 4.7.0",
       "NETStandard.Library >= 2.0.3",
+      "Syncfusion.Licensing >= 19.1.0.69",
       "Xamarin.Essentials >= 1.6.1",
       "Xamarin.Forms >= 5.0.0.2012"
     ]
@@ -3606,6 +3645,10 @@
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
+          },
+          "Syncfusion.Licensing": {
+            "target": "Package",
+            "version": "[19.1.0.69, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",

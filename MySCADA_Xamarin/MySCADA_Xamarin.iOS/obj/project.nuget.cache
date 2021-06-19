@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2EU9hk/DPhu4cZgo4qs4cKkUUm2SDbaTbbL0FuInuQJCQglvOJOnKVO+lVNZrJwsGxax0VzAZPa24VbSd9CD8g==",
+  "dgSpecHash": "gmoEdVgBuPPsglPRtaXXD3bZOQdssK7A6Fc7lflGPu7CUJfAZlx14xbndPlSjkK3Gzp1kfTNmhkBCos94rg/Yw==",
   "success": true,
   "projectFilePath": "D:\\Study Document\\PGS202\\SCADA\\CSharpProject\\MySCADA_Xamarin\\MySCADA_Xamarin\\MySCADA_Xamarin.iOS\\MySCADA_Xamarin.iOS.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,8 @@
     "C:\\Users\\nhant\\.nuget\\packages\\skiasharp\\2.80.2\\skiasharp.2.80.2.nupkg.sha512",
     "C:\\Users\\nhant\\.nuget\\packages\\skiasharp.views\\2.80.2\\skiasharp.views.2.80.2.nupkg.sha512",
     "C:\\Users\\nhant\\.nuget\\packages\\skiasharp.views.forms\\2.80.2\\skiasharp.views.forms.2.80.2.nupkg.sha512",
+    "C:\\Users\\nhant\\.nuget\\packages\\syncfusion.licensing\\19.1.0.69\\syncfusion.licensing.19.1.0.69.nupkg.sha512",
+    "C:\\Users\\nhant\\.nuget\\packages\\syncfusion.xamarin.core\\19.1.0.69\\syncfusion.xamarin.core.19.1.0.69.nupkg.sha512",
     "C:\\Users\\nhant\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
     "C:\\Users\\nhant\\.nuget\\packages\\system.linq.parallel\\4.3.0\\system.linq.parallel.4.3.0.nupkg.sha512",
     "C:\\Users\\nhant\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",

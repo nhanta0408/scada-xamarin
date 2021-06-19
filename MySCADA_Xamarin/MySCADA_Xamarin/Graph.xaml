@@ -1,12 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:forms="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms" xmlns:chart="http://schemas.grapecity.com/xf/2019/xaml"
-             x:Class="MySCADA_Xamarin.Graph">
+             x:Class="MySCADA_Xamarin.Graph"
+             Title="Biểu đồ">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <AbsoluteLayout>
+            <Label Text="Biểu đồ mực nước" FontSize="40" AbsoluteLayout.LayoutBounds="0.9,0.1,0.9,0.2" AbsoluteLayout.LayoutFlags="All"
+                />
+
+            <forms:ChartView x:Name ="LevelChart" AbsoluteLayout.LayoutBounds="0.7,0.75,350,405" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            <Image Source="Axes2.png" AbsoluteLayout.LayoutBounds="0.7,1,390,600" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

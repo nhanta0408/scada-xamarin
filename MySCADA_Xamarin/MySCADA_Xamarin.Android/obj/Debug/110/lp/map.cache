@@ -7,6 +7,7 @@ Microcharts.Droid.dll
 SkiaSharp.dll
 SkiaSharp.Views.Android.dll
 SkiaSharp.Views.Forms.dll
+Syncfusion.Core.XForms.Android.dll
 Xamarin.AndroidX.Activity.dll
 Xamarin.AndroidX.Annotation.dll
 Xamarin.AndroidX.Annotation.Experimental.dll

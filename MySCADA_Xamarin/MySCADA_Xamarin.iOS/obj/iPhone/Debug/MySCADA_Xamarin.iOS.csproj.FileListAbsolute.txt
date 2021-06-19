@@ -70,3 +70,6 @@ D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MyS
 D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.iOS\bin\iPhone\Debug\C1.Xamarin.Forms.Chart.dll
 D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.iOS\bin\iPhone\Debug\C1.Xamarin.Forms.Core.Platform.iOS.dll
 D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.iOS\bin\iPhone\Debug\C1.Xamarin.Forms.Core.dll
+D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.iOS\bin\iPhone\Debug\Syncfusion.Licensing.dll
+D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.iOS\bin\iPhone\Debug\Syncfusion.Core.XForms.dll
+D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.iOS\bin\iPhone\Debug\Syncfusion.Core.XForms.iOS.dll

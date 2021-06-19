@@ -25,7 +25,7 @@ namespace MySCADA_Xamarin
                 Alarm alarms = App.Root.FindAlarm("Level");
                 dataList.Clear();
                 foreach (var alarm in alarms.alarmTag)
-                {
+                { 
                     String str = alarm.Timestamp.ToString("HH:mm:ss dd/mm/yyyy") + "      " + alarm.Detail;
                     dataList.Add(str);
                 }

@@ -46,9 +46,13 @@
               "target": "Package",
               "version": "[4.8.20211.501, )"
             },
-            "Microcharts": {
+            "Syncfusion.Licensing": {
               "target": "Package",
-              "version": "[0.9.5.9, )"
+              "version": "[19.1.0.69, )"
+            },
+            "Syncfusion.Xamarin.Core": {
+              "target": "Package",
+              "version": "[19.1.0.69, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
@@ -131,6 +135,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Syncfusion.Licensing": {
+              "target": "Package",
+              "version": "[19.1.0.69, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",

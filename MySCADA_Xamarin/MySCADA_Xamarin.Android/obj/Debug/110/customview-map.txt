@@ -1,62 +1,64 @@
-@string/appbar_scrolling_view_behavior;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\layout\rootlayout.xml
+@string/appbar_scrolling_view_behavior;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\layout\rootlayout.xml
 adaptive-icon;obj\Debug\110\res\mipmap-anydpi-v26\icon.xml
 adaptive-icon;obj\Debug\110\res\mipmap-anydpi-v26\icon_round.xml
-alpha;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\anim\enterfromleft.xml
-alpha;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\anim\exittoleft.xml
-androidx.appcompat.widget.Toolbar;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\layout\fallbacktoolbardonotuse.xml
-androidx.appcompat.widget.Toolbar;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\layout\rootlayout.xml
-androidx.appcompat.widget.Toolbar;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\layout\shellcontent.xml
-androidx.appcompat.widget.Toolbar;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\layout\toolbar.xml
-androidx.coordinatorlayout.widget.CoordinatorLayout;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\layout\rootlayout.xml
-androidx.coordinatorlayout.widget.CoordinatorLayout;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\layout\shellcontent.xml
+alpha;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\anim\enterfromleft.xml
+alpha;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\anim\exittoleft.xml
+androidx.appcompat.widget.Toolbar;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\layout\fallbacktoolbardonotuse.xml
+androidx.appcompat.widget.Toolbar;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\layout\rootlayout.xml
+androidx.appcompat.widget.Toolbar;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\layout\shellcontent.xml
+androidx.appcompat.widget.Toolbar;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\layout\toolbar.xml
+androidx.coordinatorlayout.widget.CoordinatorLayout;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\layout\rootlayout.xml
+androidx.coordinatorlayout.widget.CoordinatorLayout;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\layout\shellcontent.xml
 attr;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\0\jl\res\values\attrs.xml
 attr;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\1\jl\res\values\attrs.xml
-attr;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\values\attrs.xml
+attr;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\values\attrs.xml
 background;obj\Debug\110\res\mipmap-anydpi-v26\icon.xml
 background;obj\Debug\110\res\mipmap-anydpi-v26\icon_round.xml
-cache-path;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\52\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+cache-path;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 color;obj\Debug\110\res\values\colors.xml
-com.google.android.material.appbar.AppBarLayout;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\layout\flyoutcontent.xml
-com.google.android.material.appbar.AppBarLayout;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\layout\rootlayout.xml
-com.google.android.material.appbar.AppBarLayout;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\layout\shellcontent.xml
-com.google.android.material.bottomnavigation.BottomNavigationView;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\layout\bottomtablayout.xml
-com.google.android.material.tabs.TabLayout;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\layout\fallbacktabbardonotuse.xml
-com.google.android.material.tabs.TabLayout;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\layout\rootlayout.xml
-com.google.android.material.tabs.TabLayout;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\layout\tabbar.xml
+com.google.android.material.appbar.AppBarLayout;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\layout\flyoutcontent.xml
+com.google.android.material.appbar.AppBarLayout;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\layout\rootlayout.xml
+com.google.android.material.appbar.AppBarLayout;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\layout\shellcontent.xml
+com.google.android.material.bottomnavigation.BottomNavigationView;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\layout\bottomtablayout.xml
+com.google.android.material.tabs.TabLayout;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\layout\fallbacktabbardonotuse.xml
+com.google.android.material.tabs.TabLayout;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\layout\rootlayout.xml
+com.google.android.material.tabs.TabLayout;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\layout\tabbar.xml
+crc643f46942d9dd1fff9.ShellFlyoutLayout;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\layout\flyoutcontent.xml
+crc64720bb2db43a66fe9.FormsViewPager;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\layout\rootlayout.xml
 declare-styleable;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\0\jl\res\values\attrs.xml
-declare-styleable;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\values\attrs.xml
+declare-styleable;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\values\attrs.xml
 enum;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\0\jl\res\values\attrs.xml
 enum;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\1\jl\res\values\attrs.xml
-external-cache-path;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\52\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
-external-path;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\52\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+external-cache-path;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+external-path;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 flag;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\1\jl\res\values\attrs.xml
 foreground;obj\Debug\110\res\mipmap-anydpi-v26\icon.xml
 foreground;obj\Debug\110\res\mipmap-anydpi-v26\icon_round.xml
-FrameLayout;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\layout\bottomtablayout.xml
-item;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\values\styles.xml
-LinearLayout;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\layout\bottomtablayout.xml
-paths;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\52\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+FrameLayout;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\layout\bottomtablayout.xml
+item;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\values\styles.xml
+LinearLayout;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\layout\bottomtablayout.xml
+paths;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 resources;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\0\jl\res\values\attrs.xml
 resources;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\0\jl\res\values\strings.xml
 resources;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\1\jl\res\values\attrs.xml
 resources;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\1\jl\res\values\strings.xml
 resources;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\5\jl\res\values\strings.xml
-resources;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\values\attrs.xml
-resources;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\values\strings.xml
-resources;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\values\styles.xml
+resources;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\values\attrs.xml
+resources;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\values\strings.xml
+resources;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\values\styles.xml
 resources;obj\Debug\110\res\values\colors.xml
 resources;obj\Debug\110\res\values\styles.xml
-set;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\anim\enterfromleft.xml
-set;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\anim\enterfromright.xml
-set;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\anim\exittoleft.xml
-set;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\anim\exittoright.xml
+set;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\anim\enterfromleft.xml
+set;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\anim\enterfromright.xml
+set;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\anim\exittoleft.xml
+set;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\anim\exittoright.xml
 string;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\5\jl\res\values\strings.xml
-string;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\values\strings.xml
-style;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\values\styles.xml
+string;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\values\strings.xml
+style;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\values\styles.xml
 style;obj\Debug\110\res\values\styles.xml
-translate;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\anim\enterfromleft.xml
-translate;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\anim\enterfromright.xml
-translate;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\anim\exittoleft.xml
-translate;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\anim\exittoright.xml
-xamarin.forms.platform.android.appcompat.FormsViewPager;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\layout\rootlayout.xml
-xamarin.forms.platform.android.ShellFlyoutLayout;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\53\jl\res\layout\flyoutcontent.xml
+translate;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\anim\enterfromleft.xml
+translate;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\anim\enterfromright.xml
+translate;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\anim\exittoleft.xml
+translate;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\anim\exittoright.xml
+xamarin.forms.platform.android.appcompat.FormsViewPager;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\layout\rootlayout.xml
+xamarin.forms.platform.android.ShellFlyoutLayout;D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\lp\54\jl\res\layout\flyoutcontent.xml

@@ -188,6 +188,30 @@
           "lib/monoandroid1.0/SkiaSharp.Views.Forms.dll": {}
         }
       },
+      "Syncfusion.Licensing/19.1.0.69": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid10.0/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10.0/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.Core/19.1.0.69": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "19.1.0.69",
+          "Xamarin.Forms": "4.5.0.617"
+        },
+        "compile": {
+          "lib/MonoAndroid10.0/Syncfusion.Core.XForms.Android.dll": {},
+          "lib/MonoAndroid10.0/Syncfusion.Core.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10.0/Syncfusion.Core.XForms.Android.dll": {},
+          "lib/MonoAndroid10.0/Syncfusion.Core.XForms.dll": {}
+        }
+      },
       "System.ComponentModel/4.3.0": {
         "type": "package",
         "compile": {
@@ -1772,6 +1796,7 @@
           "C1.Xamarin.Forms.Chart": "4.8.20211.501",
           "Microcharts.Forms": "0.9.5.9",
           "Microsoft.CSharp": "4.7.0",
+          "Syncfusion.Licensing": "19.1.0.69",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012"
         },
@@ -2174,6 +2199,70 @@
         "ref/xamarinmac2.0/SkiaSharp.Views.Forms.xml",
         "skiasharp.views.forms.2.80.2.nupkg.sha512",
         "skiasharp.views.forms.nuspec"
+      ]
+    },
+    "Syncfusion.Licensing/19.1.0.69": {
+      "sha512": "XbTWCcu7VkjbhIOFoAdheUTVyU6IruXlzmmBuCSKyUqVzMRxXKDadPD4hm8ObPBG9AwNcrG2B5ntL/xJAkNXWw==",
+      "type": "package",
+      "path": "syncfusion.licensing/19.1.0.69",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10.0/Syncfusion.Licensing.dll",
+        "lib/MonoAndroid90/Syncfusion.Licensing.dll",
+        "lib/Xamarin.Mac/Syncfusion.Licensing.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Licensing.dll",
+        "lib/net20/Syncfusion.Licensing.dll",
+        "lib/net35/Syncfusion.Licensing.dll",
+        "lib/net40/Syncfusion.Licensing.dll",
+        "lib/net45/Syncfusion.Licensing.dll",
+        "lib/net451/Syncfusion.Licensing.dll",
+        "lib/net46/Syncfusion.Licensing.dll",
+        "lib/net5.0/Syncfusion.Licensing.dll",
+        "lib/netcoreapp3.1/Syncfusion.Licensing.dll",
+        "lib/netstandard1.0/Syncfusion.Licensing.dll",
+        "lib/netstandard1.2/Syncfusion.Licensing.dll",
+        "lib/netstandard1.4/Syncfusion.Licensing.dll",
+        "lib/netstandard2.0/Syncfusion.Licensing.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
+        "lib/uap10.0/Syncfusion.Licensing.dll",
+        "syncfusion.licensing.19.1.0.69.nupkg.sha512",
+        "syncfusion.licensing.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.Core/19.1.0.69": {
+      "sha512": "cFaQE+R1GNNx4iHXC2UOTQm2D33ZMqnmSa21TqBjqaBLWPoBeDadId+uQtDnu1Yf83NKsK9faDzkiNOKeTWaJQ==",
+      "type": "package",
+      "path": "syncfusion.xamarin.core/19.1.0.69",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10.0/Syncfusion.Core.XForms.Android.dll",
+        "lib/MonoAndroid10.0/Syncfusion.Core.XForms.dll",
+        "lib/MonoAndroid10.0/Syncfusion.Core.XForms.xml",
+        "lib/MonoAndroid90/Syncfusion.Core.XForms.Android.dll",
+        "lib/MonoAndroid90/Syncfusion.Core.XForms.dll",
+        "lib/MonoAndroid90/Syncfusion.Core.XForms.xml",
+        "lib/Xamarin.Mac/Syncfusion.Core.XForms.dll",
+        "lib/Xamarin.Mac/Syncfusion.Core.XForms.macOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Core.XForms.xml",
+        "lib/netstandard2.0/Syncfusion.Core.XForms.dll",
+        "lib/netstandard2.0/Syncfusion.Core.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Core.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Core.XForms.xml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP.pri",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/Syncfusion.Core.XForms.UWP.xr.xml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ClearButtonViewVisibleIcon.xaml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/DropDownIcon.xaml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ToggleCollapsedIcon.xaml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ToggleVisibleIcon.xaml",
+        "lib/uap10.0/Syncfusion.Core.XForms.dll",
+        "lib/uap10.0/Syncfusion.Core.XForms.xml",
+        "syncfusion.xamarin.core.19.1.0.69.nupkg.sha512",
+        "syncfusion.xamarin.core.nuspec"
       ]
     },
     "System.ComponentModel/4.3.0": {
@@ -4119,8 +4208,9 @@
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v11.0": [
       "C1.Xamarin.Forms.Chart >= 4.8.20211.501",
-      "Microcharts >= 0.9.5.9",
       "MySCADA_Xamarin >= 1.0.0",
+      "Syncfusion.Licensing >= 19.1.0.69",
+      "Syncfusion.Xamarin.Core >= 19.1.0.69",
       "Xamarin.Essentials >= 1.6.1",
       "Xamarin.Forms >= 5.0.0.2012"
     ]
@@ -4171,9 +4261,13 @@
             "target": "Package",
             "version": "[4.8.20211.501, )"
           },
-          "Microcharts": {
+          "Syncfusion.Licensing": {
             "target": "Package",
-            "version": "[0.9.5.9, )"
+            "version": "[19.1.0.69, )"
+          },
+          "Syncfusion.Xamarin.Core": {
+            "target": "Package",
+            "version": "[19.1.0.69, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",
