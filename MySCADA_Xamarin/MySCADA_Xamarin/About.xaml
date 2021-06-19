@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MySCADA_Xamarin.About"
+             Title="Thông tin">
+    <ContentPage.Content>
+        <StackLayout Margin="10,40,10,10">
+            <Image Source="Aboutme2.png"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

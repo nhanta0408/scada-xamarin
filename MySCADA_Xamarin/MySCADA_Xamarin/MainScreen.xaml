@@ -5,10 +5,12 @@
              Title="Trang chính">
     <ContentPage.Content>
         <AbsoluteLayout>
-            <Label Text="Hệ thống SCADA trạm bơm sử dụng Smartphone" FontSize="25" FontAttributes="Bold" HorizontalTextAlignment="Center" AbsoluteLayout.LayoutBounds="0.5, 0.07, 0.8, 0.1" AbsoluteLayout.LayoutFlags="All"/>
+            <Label Text="HỆ THỐNG SCADA BỒN NƯỚC DÙNG SMARTPHONE" LineHeight="1.3" FontSize="25" FontAttributes="Bold" HorizontalTextAlignment="Center" AbsoluteLayout.LayoutBounds="0.5, 0.07, 0.9, 0.2" AbsoluteLayout.LayoutFlags="All"/>
 
-            <Button x:Name="Button_StartAuto"  Text="START" Pressed="Button_StartAuto_Pressed" Released="Button_StartAuto_Released" FontSize="18" FontAttributes="Bold" AbsoluteLayout.LayoutBounds="0.3, 0.8, 0.25, 0.08" AbsoluteLayout.LayoutFlags="All"/>
-            <Button x:Name="Button_StopAuto" Text="STOP" Pressed="Button_StopAuto_Pressed" Released="Button_StopAuto_Released" FontSize="18" FontAttributes="Bold" AbsoluteLayout.LayoutBounds="0.7, 0.8, 0.25, 0.08" AbsoluteLayout.LayoutFlags="All"/>
+            <Label Text="Điều khiển chế độ Auto" FontSize="25" FontAttributes="Bold" HorizontalTextAlignment="Center" AbsoluteLayout.LayoutBounds="0.5, 0.78, 0.8, 0.1" AbsoluteLayout.LayoutFlags="All"/>
+
+            <Button x:Name="Button_StartAuto"  Text="START" Pressed="Button_StartAuto_Pressed" Released="Button_StartAuto_Released" FontSize="18" FontAttributes="Bold" AbsoluteLayout.LayoutBounds="0.3, 0.85, 0.25, 0.08" AbsoluteLayout.LayoutFlags="All"/>
+            <Button x:Name="Button_StopAuto" Text="STOP" Pressed="Button_StopAuto_Pressed" Released="Button_StopAuto_Released" FontSize="18" FontAttributes="Bold" AbsoluteLayout.LayoutBounds="0.7, 0.85, 0.25, 0.08" AbsoluteLayout.LayoutFlags="All"/>
 
             <Image Source="Background2_mini.png"  AbsoluteLayout.LayoutBounds="0.3,0.3,0.69,0.6" AbsoluteLayout.LayoutFlags="All"/>
             <ProgressBar x:Name="progress_Level" Progress="0.9"  ScaleY="4.3" ScaleX="0.85" Rotation="-90" AbsoluteLayout.LayoutBounds="0.51,0.405, 0.5, 0.3" AbsoluteLayout.LayoutFlags="All"/>

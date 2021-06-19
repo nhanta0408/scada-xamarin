@@ -33,8 +33,10 @@ namespace MySCADA_Xamarin
             int _preRear = 0;
             Historian levelHistorian = App.Root.FindHistorian("Level");
             Historian levelTimestampHistorian = App.Root.FindHistorian("LevelTimestamp");
+            bool firstScan = true;
             Device.StartTimer(TimeSpan.FromSeconds(1), () =>
             {
+
                 //int intNum = rnd.Next(0, 100);  // creates a number between 1 and 12
                 //Entry entry = new Entry(intNum);
                 //entries.Add(entry);
@@ -46,7 +48,7 @@ namespace MySCADA_Xamarin
                     {
                         entries.RemoveAt(0);
                     }
-                    if (levelHistorian.ringBuffer.rear % 10 == 0 )
+                    if (levelHistorian.ringBuffer.rear % 10 == 0 || firstScan)
                     {
                         entries.Add(new Entry(currentLevel)
                         {
@@ -67,7 +69,7 @@ namespace MySCADA_Xamarin
                     LevelChart.Chart.Entries = entries;
                     _preRear = levelHistorian.ringBuffer.rear;
                 }
-
+                firstScan = false;
                 return true;
             });
         }

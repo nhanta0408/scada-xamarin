@@ -787,3 +787,8 @@ D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MyS
 D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\androidx\proguard\fc3d116c-345b-4aa1-96ff-c5ea17ad69ec.txt
 D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\res\drawable\axes.png
 D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\res\drawable\axes2.png
+D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\res\drawable\icon_alarm.png
+D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\res\drawable\icon_graph.png
+D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\res\drawable\icon_home.png
+D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\res\drawable\aboutme.png
+D:\Study Document\PGS202\SCADA\CSharpProject\MySCADA_Xamarin\MySCADA_Xamarin\MySCADA_Xamarin.Android\obj\Debug\110\res\drawable\aboutme2.png
